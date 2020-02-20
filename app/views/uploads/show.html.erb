@@ -1,1 +1,13 @@
-<%= cl_image_tag @upload.photo.key, alt: "alttext", width: 500, crop: :fill, gravity: :face, overlay: "nulm5xcxhxlyrnizf4g9.png" %>
+<div class="container">
+  <div class="row justify-content-center mt-3">
+    <h1>Cool 4 That</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col-6">
+    <%= cl_image_tag @upload.photo.key, class: 'uploaded-photo', alt: "alttext", crop: :fill, gravity: :face %>
+  </div>
+  <div class="col-6">
+    <%= cl_image_tag @upload.photo.key, class: 'uploaded-photo', alt: "alttext", crop: :fill, gravity: :face, overlay: "nulm5xcxhxlyrnizf4g9.png" %>
+  </div>
+</div>
