@@ -1,11 +1,11 @@
 <div class="banner container">
   <div class="row justify-content-center mt-3">
-    <h1>Yannify your Photo</h1>
+    <h1>Yannify Yourself</h1>
   </div>
   <div class="row justify-content-center">
     <%= simple_form_for @upload do |f| %>
       <%#= f.input :photo, as: :file, label: false %>
-      <%= f.input :photo, as: :file, input_html: { class: 'd-none' }, label_html: { class: 'upload-photo'}, label: '📸' %>
+      <%= f.input :photo, as: :file, capture: "camera", accept: "image/*",  input_html: { class: 'd-none' }, label_html: { class: 'upload-photo'}, label: '📸' %>
 
       <%#= f.submit 'Yannify', class: 'btn btn-primary' %>
     <% end %>
